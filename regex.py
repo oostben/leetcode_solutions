@@ -41,18 +41,3 @@ class Solution:
                 else:
                     self.memo[row][col] = False
         return self.memo[len(p_new)-1][len(s)-1]
-            
-
-
-solution = Solution()
-print(solution.isMatch("aasdf","a.*asdf"))
-
-print(solution.isMatch("a",".*..a*"))
-print(solution.isMatch("a","ab*a"))
-print(solution.isMatch("ssippi","s*p*."))
-print(solution.isMatch("aaa","ab*ac*a"))
-print(solution.isMatch("aab","c*a*b"))
-print(solution.isMatch("aa","a*"))
-print(solution.isMatch("mississippi","mis*is*ip*."))
-
-print(solution.isMatch("aaa","a*a"))
